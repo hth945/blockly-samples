@@ -32,18 +32,18 @@ Blockly.Blocks["stock_buy_simple"] = {
   },
 };
 
-Blockly.JavaScript["stock_buy_simple"] = function (block) {
-  var number_id = block.getFieldValue("ID");
-  var number_amount = block.getFieldValue("Amount");
-  var number_price = block.getFieldValue("Price");
-  var value_number = Blockly.JavaScript.valueToCode(
-    block,
-    "Number",
-    Blockly.JavaScript.ORDER_ATOMIC
-  );
-  var code = `buy(${number_id},${number_amount},${number_price},${value_number});\n`;
-  return code;
-};
+// Blockly.JavaScript["stock_buy_simple"] = function (block) {
+//   var number_id = block.getFieldValue("ID");
+//   var number_amount = block.getFieldValue("Amount");
+//   var number_price = block.getFieldValue("Price");
+//   var value_number = Blockly.JavaScript.valueToCode(
+//     block,
+//     "Number",
+//     Blockly.JavaScript.ORDER_ATOMIC
+//   );
+//   var code = `buy(${number_id},${number_amount},${number_price},${value_number});\n`;
+//   return code;
+// };
 
 Blockly.Blocks["stock_buy_prog"] = {
   init: function () {
@@ -60,20 +60,20 @@ Blockly.Blocks["stock_buy_prog"] = {
   },
 };
 
-Blockly.JavaScript["stock_buy_prog"] = function (block) {
-  var value_number = Blockly.JavaScript.valueToCode(
-    block,
-    "Number",
-    Blockly.JavaScript.ORDER_ATOMIC
-  );
-  var value_name = Blockly.JavaScript.valueToCode(
-    block,
-    "NAME",
-    Blockly.JavaScript.ORDER_ATOMIC
-  );
-  var code = `buy(${value_number},${value_name},${value_name});\n`;
-  return code;
-};
+// Blockly.JavaScript["stock_buy_prog"] = function (block) {
+//   var value_number = Blockly.JavaScript.valueToCode(
+//     block,
+//     "Number",
+//     Blockly.JavaScript.ORDER_ATOMIC
+//   );
+//   var value_name = Blockly.JavaScript.valueToCode(
+//     block,
+//     "NAME",
+//     Blockly.JavaScript.ORDER_ATOMIC
+//   );
+//   var code = `buy(${value_number},${value_name},${value_name});\n`;
+//   return code;
+// };
 
 Blockly.Blocks["stock_fetch_price"] = {
   init: function () {
@@ -92,16 +92,16 @@ Blockly.Blocks["stock_fetch_price"] = {
   },
 };
 
-Blockly.JavaScript["stock_fetch_price"] = function (block) {
-  var value_fetch = Blockly.JavaScript.valueToCode(
-    block,
-    "Fetch",
-    Blockly.JavaScript.ORDER_ATOMIC
-  );
-  var variable_variable = Blockly.JavaScript.nameDB_.getName(
-    block.getFieldValue("variable"),
-    Blockly.VARIABLE_CATEGORY_NAME
-  );
-  var code = `fetch_price(${value_fetch},${variable_variable});\n`;
-  return code;
-};
+// Blockly.JavaScript["stock_fetch_price"] = function (block) {
+//   var value_fetch = Blockly.JavaScript.valueToCode(
+//     block,
+//     "Fetch",
+//     Blockly.JavaScript.ORDER_ATOMIC
+//   );
+//   var variable_variable = Blockly.JavaScript.nameDB_.getName(
+//     block.getFieldValue("variable"),
+//     Blockly.VARIABLE_CATEGORY_NAME
+//   );
+//   var code = `fetch_price(${value_fetch},${variable_variable});\n`;
+//   return code;
+// };
